@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    height: 800px;
+    align-items: center;
+}
+
+.section_8{
+    display: flex;
+    background-image: linear-gradient(120deg, rgba(243, 154, 255, 0.383) 0%, rgba(64, 139, 45, 0.431) 100%), url(images/ciprian-boiciuc-TrNSWatUW5g-unsplash\ \(1\).jpg);
+    background-position: right;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(120deg, rgba(50, 251, 127, 0.116) 0%, rgba(193, 156, 204, 0.383) 100%);
+    border-radius: 15px;
+    align-items: center;
+    flex-direction: column;
+    height: 60%;
+    width: 60%;
+
+}
+
+input{
+    width: 300px;
+    height: 40px;
+}
+
+.btn_gestionar{
+    background-color: yellowgreen;
+    border-color: transparent;
+    color: white;
+}
+
+.btn_cerrarsesion{
+    background-color: steelblue;
+    border-color: transparent;
+    color: white;
+}
+
+.btn_iratienda{
+    background-color: coral;
+    border-color: transparent;
+    color: white;
+}

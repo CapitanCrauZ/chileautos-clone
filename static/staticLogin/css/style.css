@@ -1,0 +1,64 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    height: 800px;
+    align-items: center;
+}
+
+.div_section_login{
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: linear-gradient(120deg, rgba(111, 53, 246, 0.329) 0%, rgba(165, 121, 246, 0.472) 100%), url(images/section2_background.jpg);
+    width: 100%;
+    height: 100%;
+}
+
+.div_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to top, rgba(212, 220, 246, 0.342) 0%, rgba(155, 166, 200, 0.294) 100%);  
+    border-radius: 10px;
+    height: 60%;
+    width: 45%;
+}
+
+input{
+    padding-left: 10px;
+    height: 35px;
+    width: 60%;
+}
+.btn_enviar{
+    height: 50px;
+    width: 60%;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+}
+
+.a_registrar{
+    color: yellow;   
+    font: 200 16px bold;
+}
+
+.Titulo{
+    font: 200 50px bold;
+    /*text-decoration-line: underline;*/
+}

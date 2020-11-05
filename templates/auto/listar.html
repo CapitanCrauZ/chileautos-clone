@@ -1,0 +1,63 @@
+{% extends "base/contenido.html "%}
+
+{% load static %}
+
+{% block css %}
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+<link rel="stylesheet" href="{% static "staticListarAuto/css/style.css" %}">
+{% endblock css %}
+
+{% block contenido %}
+
+<section class="section_5">
+    {% if autos %}
+    <h1>Lista de Vehiculos</h1>
+    <div class="div_listarAutos">
+        
+        <table>
+            
+            <thead>
+              
+                <tr>
+                    <th>Nombre</th>
+                    <th>Modelo</th>
+                    <th>Marca</th>
+                    <th>Detalle</th>
+                    <th>Año</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for auto in autos %}
+                <tr id="{{ auto.id }}">
+                    <td>{{auto.nombre}}</td>
+                    <td>{{auto.modelo}}</td>
+                    <td>{{auto.marca}}</td>                  
+                    <td>{{auto.detalle}}</td>
+                    <td>{{auto.año}}</td>
+                    <td>{{auto.precio}}</td>
+                    <td><img src="/media/{{auto.imagenAuto}} " alt=""></td>
+                    <td class="funciones">
+                        <a href="modificar/{{ auto.id }}"><input type="submit" value="Modificar" class="btn_modificar"></a>
+                        <a href="eliminar/{{ auto.id }}"><input type="submit" value="Eliminar" class="btn_eliminar"></a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+        <p>No hay Autos.....</p>
+    {% endif %}
+    <div class="row">
+        <div class="card">
+            <a href="agregar/"><input type="submit" value="Agregar un Auto" class="btn_agregar"></a>
+            <a href="/cuenta/perfil"><input type="submit" value="Volver" class="btn_volver"></a>
+        </div>
+    </div>
+</section>
+{% endblock contenido %}
+<!--<script src="{% static "staticListarAuto/js/jsListarAuto.js" %}"></script>-->

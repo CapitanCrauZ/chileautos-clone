@@ -1,0 +1,119 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.section_5{
+    display: flex;
+    height: 900px;
+    flex-direction: column;
+    background-image: linear-gradient(120deg, rgba(216, 233, 196, 0.383) 0%, rgba(193, 206, 184, 0.431) 100%), url(images/daniel-cheung-nXKNn2L4fDw-unsplash.jpg);
+    background-position: bottom;
+}
+
+.row
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btn_agregar{
+    width: 300px;
+    height: 40px;
+}
+
+.btn_volver{
+    width: 300px;
+    height: 40px;
+}
+
+
+.div_listarAutos{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 300px;
+    height: 250;
+}
+
+
+
+.btn_modificar{
+    width: 80px;
+    height: 80px;
+    border-radius: 150px;
+    background-color: royalblue;
+    color: white;
+    border-color: transparent;
+}
+
+.btn_eliminar{
+    width: 80px;
+    height: 80px;
+    border-radius: 150px;
+    background-color: red;
+    color: white;
+    border-color: transparent;
+}
+
+.btn_modificar:hover{
+    box-shadow: 0 0 10px #1c53ec, 0 0 40px #1c53ec, 0 0 80px #1c53ec;
+    transition-delay: 0s;
+}
+
+.btn_eliminar:hover{
+    box-shadow: 0 0 10px #d81e1e, 0 0 40px #d81e1e, 0 0 80px #d81e1e;
+    transition-delay: 0s;
+}
+
+.row{
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    align-self: center;
+    width: 90%;
+    
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+}
+
+table{
+    width: 80%;
+    height: 60%;
+    padding: 30px;
+    background-image: linear-gradient(120deg, rgba(161, 173, 148, 0.883) 0%, rgba(162, 168, 157, 0.876) 100%);
+}
+
+td{
+    border: 2px solid;
+    text-align: center;
+    border: 2px solid;
+    flex-direction: column;
+}
+
+.funciones{
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    border: 0px !important;
+}
+
+th{
+    border: 2px solid;
+}
+
+h1{
+    display: flex;
+    align-self: center;
+    padding-top: 20px;
+}

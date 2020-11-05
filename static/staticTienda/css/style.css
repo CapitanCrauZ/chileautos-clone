@@ -1,0 +1,185 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+img{
+    width: 300px;
+    height: 250;
+}
+
+
+
+thead{
+    display: flex;
+    flex-direction: column;
+}
+
+.tr_titulo{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+thead tr th{
+    text-align: center;
+
+}
+.section_5{
+    display: flex;
+    height: 800px;
+    background-image: linear-gradient(120deg, rgba(216, 233, 196, 0.383) 0%, rgba(193, 206, 184, 0.431) 100%), url(images/daniel-cheung--oM_twQDw2Y-unsplash.jpg);
+    background-position: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.div_listarAutos{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+tbody{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.text-center{
+    display: flex;
+}
+
+.tabla_autos{
+    padding: 20px;
+    background-image: linear-gradient(120deg, rgba(173, 168, 148, 0.5) 0%, rgba(168, 168, 157, 0.479) 100%);
+}
+
+.tabla_widget{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-image: linear-gradient(120deg, rgba(173, 168, 148, 0.5) 0%, rgba(168, 168, 157, 0.479) 100%);
+    height: 100%;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.tr_cosas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tr_objetos{
+    display: flex;
+}
+
+.tbody_autos{
+    display: flex;
+    flex-direction: row !important;
+}
+
+.tr_resultados{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.botones{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trs{
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+
+.btn_volver{
+    width: 300px;
+    height: 40px;
+}
+
+.btn_ircarrito{
+    width: 300px;
+    height: 40px;
+}
+
+.btn_agregarcarro{
+    width: 180px;
+    height: 60px;
+    border-radius: 150px;
+    background-color: slateblue;
+    color: white;
+    border-color: transparent;
+}
+
+td{
+    text-align: center;
+}
+
+.funciones{
+    border: 0px !important;
+}
+
+h1{
+    display: flex;
+    align-self: center;
+    padding-top: 30px;
+}
+
+.div_widget{
+    display: flex;
+    align-self: center;
+    height: 80%;
+    justify-content: center;
+}
+
+tfoot{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    align-self: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn_eliminar{
+
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    border-color: transparent;
+}
+
+.btn_comprar{
+
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(47, 255, 64);
+    color: white;
+    border-color: transparent;
+}
+
+.btn_limpiar{
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    border-color: transparent;
+
+}

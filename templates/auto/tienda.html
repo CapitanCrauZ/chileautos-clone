@@ -1,0 +1,47 @@
+{% extends "base/contenido.html "%}
+
+{% load static%}
+
+{% block css %}
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+<link rel="stylesheet" href="{% static "staticTienda/css/style.css" %}">
+{% endblock css %}
+
+{% block contenido %}
+
+<section class="section_5">
+    <div>
+        <form action="" method="GET">
+            <div id="search">
+                <input type="text" placeholder="Buscar Vehiculo..." name="buscar">
+                <span>
+                    <button type="submit">Buscar</button>
+                </span>
+            </div>
+        </form>
+    </div>
+    {% if autos %}
+    <div class="div_listarAutos">
+        <table class="tabla_autos">
+            <tbody class="tbody_autos">
+                {% for auto in autos %}
+                <tr id="{{ auto.id }}" class="trs">
+                    <td>
+                        <a href="{% url 'agregarCarro' id_auto=auto.id %}"><input type="submit" value="Agregar al Carro" class="btn_agregarcarro"></a>
+                    </td>
+                    <td>{{auto.nombre}}</td>
+                    <td>{{auto.precio}}</td>
+                    <td><img src="/media/{{auto.imagenAuto}} " alt=""></td>                   
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="div_widget">
+        {% include "widget/carro_widget.html" %}
+    </div>
+    {% else %}
+        <p>No hay Autos.....</p>
+    {% endif %}
+</section>
+{% endblock contenido %}

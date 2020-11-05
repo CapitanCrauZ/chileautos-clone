@@ -1,0 +1,29 @@
+{% extends "base/contenido.html "%}
+
+{% load static %}
+
+{% block css %}
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+<link rel="stylesheet" href="{% static "staticAgregarAuto/css/style.css" %}">
+{% endblock css %}
+
+{% block contenido %}
+<div class="container"
+    ><section class="section_6">
+        <div class="card">
+            <form action="" method="POST" enctype="multipart/form-data">
+                {{ formulario.as_p }}
+                {% csrf_token %}
+                <p>
+                    <button class="btn_volver" ><a class="a_volver" href="/auto/">Volver</a></button>
+                    <button class="btn_agregar" type="submit" name="action">Agregar</button>
+                </p>
+            </form>
+            
+        </div>
+    </section>
+</div>
+
+{% endblock contenido %}
+
+<!--<script src="{% static "staticListarAuto/js/jsListarAuto.js" %}"></script>-->

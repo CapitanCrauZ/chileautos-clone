@@ -1,0 +1,23 @@
+{% extends "base/contenido.html "%}
+
+{% load static %}
+
+{% block css %}
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+<link rel="stylesheet" href="{% static "staticFail/css/style.css" %}">
+{% endblock css %}
+
+{% block contenido %}
+<section class="section_9">
+    <div class="body">
+        <div class="titulo">
+            <h1>Necesitas estar Logueado para poder ingresar a esas funcionalidades!!!</h1>
+
+        </div>
+        <div class="card">
+            <a href="/cuenta/"><input type="submit" value="Volver" class="btn_volver"></a>
+        </div>
+    </div>
+</section>
+{% endblock contenido %}
+<!--<script src="{% static "staticListarAuto/js/jsListarAuto.js" %}"></script>-->

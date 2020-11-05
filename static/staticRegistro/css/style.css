@@ -1,0 +1,67 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    height: 800px;
+    justify-content: center;
+}
+
+.section_7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(120deg, rgba(95, 177, 47, 0.383) 0%, rgba(64, 139, 45, 0.431) 100%), url(images/sophie-walker-ymwNCtJzwTI-unsplash.jpg);
+    height: 100%;
+    width: 100%;
+}
+
+.card{
+    height: 80%;
+    width: 40%;
+    justify-content: space-around;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(to top, rgba(209, 245, 192, 0.623) 0%, rgba(206, 238, 187, 0.623) 100%);
+}
+
+input{
+    width: 250px;
+    height: 30px;
+}
+select{
+    width: 250px;
+    height: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: space-evenly;
+    height: 80%;
+}
+
+div .form-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+div p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_guardar{
+    align-self: center;
+    background-color: lightseagreen;
+    color: white;
+}
+
+.Titulo{
+    align-self: center;
+}

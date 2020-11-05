@@ -1,0 +1,45 @@
+
+<table class="tabla_widget">
+    <thead>
+       <tr class="tr_titulo">
+           <th>
+               Carrito de compras
+           </th>
+       </tr>
+       <tr class="tr_cosas">
+           <th>Nombre</th>
+           <th>Precio</th>
+           <th>Eliminar</th>
+       </tr>
+   </thead>
+   <tbody>
+       {% if request.session.carro.items %}
+          {% for key, value in request.session.carro.items %}
+               <tr class="tr_resultados">
+                   <td>{{value.nombre}}</td>
+                   <td>{{value.precio}}</td>
+                   <td>
+                       <a href="{% url 'borrar' value.auto_id %}"><input type="submit" value="Eliminar" class="btn_eliminar"></a>
+                   </td>                   
+               </tr>
+          {% endfor %}
+       {% else %}
+            <tr>
+               <td>
+                   <div class="alert alert-danger text-center">
+                       No tienes productos en el carrito
+                   </div>
+               </td>
+               
+           </tr>
+       {% endif %}
+   </tbody>
+   <tfoot>
+       <tr class="total">
+       </tr>
+       <tr class="botones">
+            <th><a href="{%url 'limpiar'%}">Limpiar carrito</a></th> 
+            <th><a href="{%url 'limpiar'%}">Comprar</a></th>
+       </tr>
+   </tfoot>
+</table>

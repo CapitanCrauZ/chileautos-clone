@@ -1,0 +1,23 @@
+{% extends "base/contenido.html "%}
+
+{% load static %}
+
+{% block css %}
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+<link rel="stylesheet" href="{% static "staticModificarAuto/css/style.css" %}">
+{% endblock css %}
+
+{% block contenido %}
+<section class="section_6">
+    <div class="card">
+        <form action="" method="POST">
+            {{ formulario.as_p }}
+            {% csrf_token %}
+            <button class="btn waves-effect waves-light" type="submit" name="action">Modificar
+                <i class="material-icons right"></i>
+            </button>
+        </form>
+    </div>
+</section>
+{% endblock contenido %}
+<!--<script src="{% static "staticListarAuto/js/jsListarAuto.js" %}"></script>-->

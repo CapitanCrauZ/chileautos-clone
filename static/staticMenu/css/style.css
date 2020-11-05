@@ -1,0 +1,277 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+img{
+    border: 0px;
+
+}
+
+
+/* SECTION_1*/
+
+.section_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(120deg, rgba(246, 212, 101, 0.493) 0%, rgba(253, 159, 133, 0.472) 100%), url(images/main_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 80vh;
+}
+
+.div_contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;  
+    background: linear-gradient(to top, rgba(255, 246, 235, 0.623) 0%, rgba(255, 246, 235, 0.623) 100%);
+    border-radius: 10px;
+    width: 70%;
+    height: 100px;
+}
+
+.input_texto{
+    width: 60%;
+    height: 40%;
+}
+
+.submit_buscar{
+    width: 20%;
+    height: 40%;
+}
+
+/* SECTION_2 */
+
+.section_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(120deg, rgba(246, 212, 101, 0.493) 0%, rgba(253, 159, 133, 0.472) 100%), url(images/main_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 160vh;
+}
+
+.div_mazo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* CARTA 1 */
+
+.div_card_1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to top, rgba(255, 246, 235, 0.623) 0%, rgba(255, 246, 235, 0.623) 100%);
+    border-radius: 20px;
+    width: 40%;
+    height: 405px;
+    margin: 20px;
+    transition: 1s;
+}
+
+.div_card_1:hover{
+    padding-right: 700px;
+    width: 70%;
+}
+
+.div_card_1:hover .h2_card_1{
+    visibility: visible;  
+}
+
+.div_card_1:hover .p_card_1{
+    visibility: visible;  
+}
+
+.div_card_1:hover .submit_card_1{
+    visibility: visible;
+}
+
+.div_card_1:hover .img_card_1{
+    left: 48%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.img_card_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url(images/kisspng-2017-hyundai-accent-hyundai-motor-company-car-2018-5b0fa101a59bb5.0171783015277509136783.png);
+    background-size: 100% 100%;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    transition: 0.5s;   
+}
+
+.h2_card_1{
+    visibility: hidden;
+}
+
+.p_card_1{
+    padding-left: 15px;
+    visibility: hidden;
+}
+
+.submit_card_1{
+    visibility: hidden;
+    width: 100px;
+    height: 50px;
+}
+
+
+
+/* CARTA 2 */
+
+.div_card_2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to top, rgba(255, 246, 235, 0.623) 0%, rgba(255, 246, 235, 0.623) 100%);
+    border-radius: 20px;
+    width: 40%;
+    height: 405px;
+    margin: 20px;
+    transition: 1s;
+}
+
+.div_card_2:hover{
+    padding-right: 700px;
+    width: 70%;
+}
+
+.div_card_2:hover .h2_card_2{
+    visibility: visible;  
+}
+
+.div_card_2:hover .p_card_2{
+    visibility: visible;  
+}
+
+.div_card_2:hover .submit_card_2{
+    visibility: visible;
+}
+
+.div_card_2:hover .img_card_2{
+    left: 48%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+
+.img_card_2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url(images/kisspng-2015-toyota-corolla-l-used-car-2015-toyota-corolla-toyota-png-clipart-5a77bc064c89b5.6426447315177963583135.png);
+    background-size: 80% 100%;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    transition: 0.5s;
+}
+
+.h2_card_2{
+    visibility: hidden;
+}
+
+
+.p_card_2{
+    padding-left: 15px;
+    visibility: hidden;
+}
+
+.submit_card_2{
+    visibility: hidden;
+    width: 100px;
+    height: 50px;
+}
+
+/* CARTA 3 */
+
+.div_card_3{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to top, rgba(255, 246, 235, 0.623) 0%, rgba(255, 246, 235, 0.623) 100%);
+    border-radius: 20px;
+    width: 40%;
+    height: 405px;
+    transition: 1s;
+    
+}
+
+.div_card_3:hover{
+    padding-right: 700px;
+    width: 70%;
+}
+
+.div_card_3:hover .h2_card_3{
+    visibility: visible;  
+    
+}
+
+.div_card_3:hover .p_card_3{
+    visibility: visible;  
+}
+
+.div_card_3:hover .submit_card_3{
+    visibility: visible;
+}
+
+.div_card_3:hover .img_card_3{
+    left: 48%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+
+.img_card_3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url(images/kisspng-ford-fiesta-used-car-ford-focus-st-ford-focus-5b512ce7a223f3.9047777915320465676641.png);
+    background-size: 100% 100%;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    /*transition: 1.1s;*/
+}
+
+.h2_card_3{
+    visibility: hidden;
+}
+
+.p_card_3{
+    padding-left: 15px;
+    visibility: hidden;
+}
+
+.submit_card_3{
+    visibility: hidden;
+    width: 100px;
+    height: 50px;
+}
+
+

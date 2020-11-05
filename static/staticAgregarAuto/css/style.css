@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: flex;
+    height: 800px;
+}
+
+.section_6{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, rgba(78, 153, 140, 0.383) 0%, rgba(85, 140, 161, 0.431) 100%), url(images/sebastjan-strasek-b1yn5whfces-unsplash.jpg);
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width:350px;
+    height: 37px;
+}
+
+.card{
+    display: flex;
+    width: 60%;
+    height: 80%;
+    align-items: center;
+    background: linear-gradient(to top, rgba(78, 129, 126, 0.623) 0%, rgba(112, 156, 149, 0.623) 100%);
+    border-radius: 10px;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    width: 75%;
+    height: 90%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+p{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    width: 250px;
+    height: 35px;
+}
+
+.btn_agregar{
+    align-self: center;
+    background-color: rgb(59, 167, 95);
+    color: white;
+    border-color: transparent;
+
+}
+.btn_volver{
+    align-self: center;
+    background-color: red;
+    border-color: transparent;
+}
+
+.a_volver{
+    color: white;
+}

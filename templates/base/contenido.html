@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "staticBase/css/style.css" %}">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    {% block css %}
+
+    {% endblock css %}
+    <title>
+         Chileautos: miles de autos y vehículos usados y nuevos
+    </title>
+</head>
+<body>
+<!------------------------------------------------------------------------------------------------------------------->
+<header>
+    <nav class="navegacion">
+        <a href="/menu/"><i class='bx bxs-home' ></i></a>
+        <a href="/menu/">Inicio</a>
+        <a href="/auto/tienda/">Compra un Auto</a>
+        <a href="/menu/m">Utilidades</a>
+        <a href="/menu/m">Seguros</a>
+        <a href="/menu/m">Contacto</a>
+        <a href="/menu/m">Servicios</a>
+        {% if user.is_authenticated %}
+            <a href="/cuenta/perfil/">{{ user.username }}</a>
+            <a href="{% url 'salir' %}">Cerrar sesión</a>
+        {% else %}
+            <a href="/cuenta/">Ingresar</a>
+            <a href="/cuenta/registro/">Registrarse</a>
+        {% endif %}
+    </nav>
+</header>
+<!------------------------------------------------------------------------------------------------------------------->
+<main>
+
+{% block contenido %}
+
+{% endblock contenido %}
+
+</main>
+<!------------------------------------------------------------------------------------------------------------------->
+<footer id="Información">
+    <section class="derechos_autor">
+        <h2>Chileautos</h2>
+        <p>
+            © carsales.com Limited 1999-2020
+        </p>
+    </section>
+    <section class="redes_sociales">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-youtube'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>    
+    </section>    
+</footer>
+{% block js %}
+    
+{% endblock js %}
+</body>
+</html>
