@@ -83,14 +83,34 @@ footer{
 
 @media screen and (max-width: 820px){
     .navegacion{
-        height: 30vh;
+        height: 36vh;
     }
     .navegacion a{
         width: 50%;
         height: 20%;
     }
+
+    footer{
+        display:flex;
+        height:25vh;
+        justify-content:space-evenly;
+    }
+
+    .derechos_autor{
+        display:flex;
+        width:50%;
+    }
+
+    .redes_sociales{
+        display:flex;
+        width:50%;
+    }
+
+
+
 }
 
 @media screen and (max-width: 450px){
-
+    
 }
+

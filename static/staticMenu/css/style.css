@@ -274,4 +274,50 @@ img{
     height: 50px;
 }
 
+@media screen and (max-width: 1080px){
+    .div_mazo{
+        height: 90%;
+    }
+
+    .div_card_1{
+        width: 80%;
+    }
+
+    .div_card_2{
+        width: 80%;
+    }
+
+    .div_card_3{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .section_1{
+        height: 50vh;
+    }
+
+    .section_2{
+        height: 200vh;
+    }
+
+    
+    .div_mazo{
+        height: 90%;
+    }
+
+    .div_card_1{
+        width: 80%;
+    }
+
+    .div_card_2{
+        width: 80%;
+    }
+
+    .div_card_3{
+        width: 80%;
+    }
+}
+
+
 

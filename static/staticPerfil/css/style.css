@@ -54,3 +54,15 @@ input{
     border-color: transparent;
     color: white;
 }
+
+@media screen and (max-width: 820px){
+    .card{
+        width: 90%;
+    }
+
+    input{
+        width: 200px;
+        height: 30px;
+    }
+
+}

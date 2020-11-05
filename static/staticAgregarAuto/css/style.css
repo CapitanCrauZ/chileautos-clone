@@ -69,3 +69,16 @@ button{
 .a_volver{
     color: white;
 }
+
+@media screen and (max-width: 1450px){
+
+    button{
+        width: 200px;
+        height: 30px;
+    }
+
+    input{
+        width: 80%;
+    }
+
+}
