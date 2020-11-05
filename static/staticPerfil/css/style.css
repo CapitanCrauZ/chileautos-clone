@@ -55,6 +55,10 @@ input{
     color: white;
 }
 
+form{
+    display: flex;
+}
+
 @media screen and (max-width: 820px){
     .card{
         width: 90%;

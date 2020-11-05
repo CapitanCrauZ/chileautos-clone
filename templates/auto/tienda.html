@@ -10,18 +10,19 @@
 {% block contenido %}
 
 <section class="section_5">
-    <div>
-        <form action="" method="GET">
-            <div id="search">
-                <input type="text" placeholder="Buscar Vehiculo..." name="buscar">
-                <span>
-                    <button type="submit">Buscar</button>
-                </span>
-            </div>
-        </form>
-    </div>
+    
     {% if autos %}
     <div class="div_listarAutos">
+        <div  class="div_buscar">
+            <form action="" method="GET" class="form_buscar">
+                <div id="search" class="div_search">
+                    <input type="text" placeholder="Buscar Vehiculo..." name="buscar" class="input_buscar">
+                    <span>
+                        <button type="submit" class="btn_buscar">Buscar</button>
+                    </span>
+                </div>
+            </form>
+        </div>
         <table class="tabla_autos">
             <tbody class="tbody_autos">
                 {% for auto in autos %}
