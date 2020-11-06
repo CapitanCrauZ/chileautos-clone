@@ -1,9 +1,5 @@
 ### Bienvenido al repositorio de Venta de autos
 
-### Colaboradores 
-- PhillipsMayfir
-- CaptainCrauZ
-
 **Table of Contents**
 [TOCM]
 
@@ -83,3 +79,7 @@ En esta sección se nombraran las tablas creadas ademas de las que se usan en dj
 | save | completa | apps-auto-carro |
 | remove | completa | apps-auto-carro |
 | clear | completa | apps-auto-carro |
+
+### Colaboradores 
+- PhillipsMayfir
+- CaptainCrauZ
