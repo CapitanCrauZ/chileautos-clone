@@ -50,8 +50,12 @@ En esta sección podemos ver los requerimientos para poder ocupar este código.
 
 ![](https://github.com/PhillipsMayfir/Prueba/blob/master/3.png?raw=true)
 
-> s
+> Menú Autos Desplegandosé(por resolucción se ve mal pero está arreglado)(El Felipe la Trolleo)
+
 ![](https://github.com/PhillipsMayfir/Prueba/blob/master/4.png?raw=true)
+
+> Url de Error de Ingreso a Tienda sin Login
+
 ![](https://github.com/PhillipsMayfir/Prueba/blob/master/6.png?raw=true)
 
 #### Modelos
