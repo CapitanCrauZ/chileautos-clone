@@ -5,11 +5,11 @@
 
 [TOC]
 
-####Introducción
+###Introducción
 -Este repositorio trata sobre una pagina web de venta de vehiculos trabajada con Django, JavaScript, HTML5 y MySQL con el editor de codigo Visual Studio Code.
 
 
-####Requerimientos 
+###Requerimientos 
 En esta sección podemos ver los requerimientos para poder ocupar este código.
                 
    + python==3.7
