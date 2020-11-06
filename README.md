@@ -39,13 +39,18 @@ En esta sección podemos ver los requerimientos para poder ocupar este código.
 
 
 
-
+> Menu Principal
 ![](https://github.com/PhillipsMayfir/Prueba/blob/master/1.png?raw=true)
 
-> Menu Principal
+> Login
 
 ![](https://github.com/PhillipsMayfir/Prueba/blob/master/2.png?raw=true)
+
+> Registro Usuario
+
 ![](https://github.com/PhillipsMayfir/Prueba/blob/master/3.png?raw=true)
+
+> s
 ![](https://github.com/PhillipsMayfir/Prueba/blob/master/4.png?raw=true)
 ![](https://github.com/PhillipsMayfir/Prueba/blob/master/6.png?raw=true)
 
