@@ -1,5 +1,9 @@
 ### Bienvenido al repositorio de Venta de autos
 
+### Colaboradores 
+- PhillipsMayfir
+- CaptainCrauZ
+
 **Table of Contents**
 [TOCM]
 
