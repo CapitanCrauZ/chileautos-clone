@@ -32,7 +32,7 @@ En esta sección podemos ver los requerimientos para poder ocupar este código.
    + typed-ast==1.4.1
    + wrapt==1.12.1
 
-####Imagenes de la pagina web
+### Imagenes de la pagina web
 
 
 
