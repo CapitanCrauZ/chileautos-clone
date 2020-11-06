@@ -1,9 +1,10 @@
 ### Bienvenido al repositorio de Venta de autos
 
-**Table of Contents**
-[TOCM]
+### Table of Contents
 
-[TOC]
+* [Introducción] (# Introducción)
+* [Colaboradores] (# Colaboradores)
+
 
 #H1 Header
 
