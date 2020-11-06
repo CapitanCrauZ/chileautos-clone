@@ -4,7 +4,7 @@
 
 [Introducción](#Introducción).
 [Requerimientos](#Requerimientos).
-[Imagenes de la pagina web](#Imagenes de la pagina web).
+[Imagenes de la pagina web](#Imagenes-de-a-pagina-web).
 [Modelos](#Modelos).
 [Funciones](#Funciones).
 [Colaboradores](#Colaboradores).
