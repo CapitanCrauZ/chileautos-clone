@@ -3,6 +3,10 @@
 ### Table of Contents
 
 [Introducción](#Introducción).
+[Requerimientos](#Requerimientos).
+[Imagenes de la pagina web](#Imagenes de la pagina web).
+[Modelos](#Modelos).
+[Funciones](#Funciones).
 [Colaboradores](#Colaboradores).
 
 ### Introducción
