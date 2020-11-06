@@ -5,7 +5,6 @@
 }
 .section_5{
     display: flex;
-    height: 900px;
     flex-direction: column;
     background-image: linear-gradient(120deg, rgba(216, 233, 196, 0.383) 0%, rgba(193, 206, 184, 0.431) 100%), url(images/daniel-cheung-nXKNn2L4fDw-unsplash.jpg);
     background-position: bottom;
@@ -40,7 +39,7 @@
 
 img{
     width: 300px;
-    height: 250;
+    height: 250px;
 }
 
 
