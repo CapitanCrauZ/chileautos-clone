@@ -2,8 +2,8 @@
 
 ### Table of Contents
 
--[Introducción](#Introducción)
--[Colaboradores](#Colaboradores)
+*[Introducción](#Introducción)
+*[Colaboradores](#Colaboradores)
 
 ### Introducción
 -Este repositorio trata sobre una pagina web de venta de vehiculos trabajada con Django, JavaScript, HTML5 y MySQL con el editor de codigo Visual Studio Code.
