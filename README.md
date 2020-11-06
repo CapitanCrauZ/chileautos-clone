@@ -2,12 +2,12 @@
 
 ### Table of Contents
 
-[Introducción](#Introducción).
-[Requerimientos](#Requerimientos).
-[Imagenes de la pagina web](#Imagenes-de-a-pagina-web).
-[Modelos](#Modelos).
-[Funciones](#Funciones).
-[Colaboradores](#Colaboradores).
+- [Introducción](#Introducción).
+- [Requerimientos](#Requerimientos).
+- [Imagenes de la pagina web](#Imagenes-de-a-pagina-web).
+- [Modelos](#Modelos).
+- [Funciones](#Funciones).
+- [Colaboradores](#Colaboradores).
 
 ### Introducción
 -Este repositorio trata sobre una pagina web de venta de vehiculos trabajada con Django, JavaScript, HTML5 y MySQL con el editor de codigo Visual Studio Code.
