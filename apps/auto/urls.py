@@ -1,7 +1,7 @@
 # Importando Path para generar Urls
 from django.urls import path
 # Importando los View para vincular una funcionalidad ocn una Url
-from .views import *
+from .views import agregarAuto, eliminarAuto, modificarAuto, listarAutos, listarAuto, agregarCarro, borrar, limpiar, fail
 urlpatterns = [
     path('agregar/', agregarAuto, name='agregar_auto'),
     path('eliminar/<int:id_auto>', eliminarAuto, name='eliminar_auto'),
@@ -12,6 +12,4 @@ urlpatterns = [
     path('borrar/<int:id_auto>',borrar, name='borrar'),
     path('limpiar/', limpiar, name='limpiar'),
     path('fail/', fail, name='fail'),
-    
-
-]
+            ]

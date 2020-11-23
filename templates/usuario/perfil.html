@@ -12,8 +12,13 @@
     <section class="section_8">
         <div class="card">
             <h1>Bienvenido {{user.username}}</h1>            
+            {% if user.is_superuser == True %}
             <a href="/auto/"><input type="submit" value="Gestionar Autos" class="btn_gestionar"></a>
             <a href="/auto/tienda/"><input type="submit" value="Ir a Tienda" class="btn_iratienda"></a>
+            {% else %}
+                <a href="/auto/tienda/"><input type="submit" value="Ir a Tienda" class="btn_iratienda"></a>
+            {% endif %}
+            
             <a href="{% url 'salir' %}"><input type="submit" value="Cerrar Sesión" class="btn_cerrarsesion"></a>
         </div>
     </section>

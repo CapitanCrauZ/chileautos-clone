@@ -31,5 +31,3 @@ class Carro:
     def clear(self):
         self.session["carro"] = {}
         self.session.modified =True
-
-    

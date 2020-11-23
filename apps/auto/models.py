@@ -20,7 +20,7 @@ class Auto(models.Model):
     modelo = models.CharField(max_length=50)
     marca = models.CharField(max_length=50)
     detalle = models.TextField(max_length=50)
-    año = models.PositiveIntegerField()
+    anio = models.PositiveIntegerField()
     precio = models.PositiveIntegerField()
     imagenAuto = models.FileField(upload_to='fotos', default=None)
     categoria = models.ForeignKey(Categoria,on_delete=models.CASCADE, default=None)

@@ -14,6 +14,7 @@ from pathlib import Path
 from os.path import join
 
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -39,9 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'social_django',
     'apps.menu',
-    'apps.auto',
-    'apps.cuenta'
+    'apps.cuenta',
+    'apps.auto'
+
     
 ]
 
@@ -56,6 +59,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'chileautos.urls'
+#Configuración para decirle a esta cosa que vamos a usar otra forma de login...
+
+AUTHENTICATION_BACKENDS = [
+    'social_core.backends.facebook.FacebookOAuth2',
+    'django.contrib.auth.backends.ModelBackend'
+]
 
 TEMPLATES = [
     {
@@ -70,7 +79,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'apps.auto.context_processor.cart_total_amount',
+                'social_django.context_processors.backends', #Obtener si inicio sesión desde una red social....
+                'social_django.context_processors.login_redirect', #Implementar el login redirect
+                #'apps.auto.context_processor.cart_total_amount',
             ],
         },
     },
@@ -118,7 +129,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'es-cl'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Santiago'
 
 USE_I18N = True
 
@@ -149,3 +160,15 @@ STATICFILES_DIRS = [join(BASE_DIR,'static')]
 #Configuración para media
 MEDIA_URL = '/media/'
 MEDIA_ROOT = join(BASE_DIR, 'media')
+
+#Variables para controlar el ingreso y salida(Rutas)
+
+LOGIN_URL = 'ingreso'
+LOGIN_REDIRECT_URL = 'perfil'
+LOGOUT_URL = 'salir'
+LOGOUT_REDIRECT_URL = 'ingreso'
+
+#Configuración para conectarse a la api de facebook
+
+SOCIAL_AUTH_FACEBOOK_KEY = '360285051925699'
+SOCIAL_AUTH_FACEBOOK_SECRET = 'fd371da6522a7d74e24acd592a181564'

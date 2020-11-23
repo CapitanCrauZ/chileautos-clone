@@ -107,7 +107,3 @@ def limpiar(request):
     carro= Carro(request)
     carro.clear()
     return redirect("/auto/tienda/")
-
-
-
-

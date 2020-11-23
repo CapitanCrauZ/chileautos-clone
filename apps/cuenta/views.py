@@ -5,6 +5,8 @@ from django.contrib import messages
 from django.contrib.auth import login, logout, authenticate
 from .models import Genero, PerfilUsuario
 from django.contrib.auth.models import User
+from django.contrib.auth.decorators import login_required
+
 
 
 
@@ -22,7 +24,7 @@ def registro(request):
             perfil.usuario = usuario
             perfil.save()
             messages.add_message(request, messages.INFO, 'Registrado Correctamente....')
-            return redirect('/perfil/')
+            return redirect('/cuenta/perfil/')
     context = {
         'formulario':formulario,
         'formulario2': formulario2
@@ -61,12 +63,12 @@ def salir(request):
     logout(request)
     return redirect('/cuenta/')
 
-
+@login_required
 def perfil(request):
     if request.user.is_authenticated:
         return render(
             request,
             'usuario/perfil.html',
         )
-    return redirect('cuenta/')
+    return redirect('/cuenta/perfil')
 
