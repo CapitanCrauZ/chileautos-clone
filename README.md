@@ -1,6 +1,6 @@
-### Bienvenido al repositorio de Chileautos
+# Chileautos Web Application
 
-### Table of Contents
+### Indice
 
 - [Introducción](#Introducción).
 - [Requerimientos](#Requerimientos).
@@ -10,7 +10,7 @@
 - [Colaboradores](#Colaboradores).
 
 ### Introducción
--Este repositorio trata sobre una pagina web de venta de vehiculos trabajada con Django, JavaScript, HTML5 y MySQL con el editor de codigo Visual Studio Code.
+Este repositorio trata sobre una pagina web de venta de vehiculos trabajada con Django, JavaScript, HTML5 y MySQL con el editor de codigo Visual Studio Code.
 
 
 ### Requerimientos 

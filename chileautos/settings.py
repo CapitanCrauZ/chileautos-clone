@@ -85,9 +85,9 @@ WSGI_APPLICATION = 'chileautos.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'chileautos2',
+        'NAME': 'chileautos',
         'USER':'root',
-        'PASSWORD':'1234',
+        'PASSWORD':'admin',
         'HOST':'localhost',
         'PORT':'3306',
     }
