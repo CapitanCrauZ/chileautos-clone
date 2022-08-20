@@ -1,4 +1,4 @@
-# Chileautos Clon | Web Application
+# Chileautos Clon - Web Application
 
 ### Indice
 
