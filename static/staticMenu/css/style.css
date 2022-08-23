@@ -274,6 +274,49 @@ img{
     height: 50px;
 }
 
+.sectionClima{
+
+    display: flex;
+    height: 30vh;
+    flex-direction: column;
+    background-image: linear-gradient(120deg, rgba(246, 244, 101, 0.555) 0%, rgba(214, 216, 90, 0.329) 100%);
+    background-position: top;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(120deg, rgba(246, 232, 101, 0.555) 0%, rgba(216, 197, 90, 0.329) 100%);
+    background-repeat: no-repeat;
+}
+.divClima{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    width: 100%;
+    height: 70%;
+}
+
+.divInput{
+    display: flex;
+    width: 80%;
+    height: 30%;
+    justify-content: space-evenly;
+}
+
+#buscarClima{
+    width: 30%;
+}
+
+#inputClima{
+    width: 60%;
+}
+
 @media screen and (max-width: 1080px){
     .div_mazo{
         height: 90%;

@@ -29,7 +29,6 @@ thead tr th{
 }
 .section_5{
     display: flex;
-    height: 800px;
     background-image: linear-gradient(120deg, rgba(216, 233, 196, 0.383) 0%, rgba(193, 206, 184, 0.431) 100%), url(images/daniel-cheung--oM_twQDw2Y-unsplash.jpg);
     background-position: center;
     flex-direction: row;
@@ -227,5 +226,17 @@ tfoot{
 }
 
 @media screen and (max-width: 820px){
+    .section_5{
+        flex-direction: column;
+    }
+
+    .input_buscar{
+    width: 70%;
+    height: 80%;
+    }
+
+    .tbody_autos{
+        flex-direction: column !important;
+    }
 
 }

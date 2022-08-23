@@ -31,7 +31,7 @@
     background: linear-gradient(to top, rgba(212, 220, 246, 0.342) 0%, rgba(155, 166, 200, 0.294) 100%);  
     border-radius: 10px;
     height: 60%;
-    width: 45%;
+    width: 55%;
 }
 
 input{
@@ -61,4 +61,21 @@ input{
 .Titulo{
     font: 200 50px bold;
     /*text-decoration-line: underline;*/
+}
+
+@media screen and (max-width: 1020px){
+    .div_login{
+        width: 80%;
+    }
+
+    input{
+        padding-left: 10px;
+        height: 35px;
+        width: 80%;
+    }
+
+    .btn_enviar{
+        height: 50px;
+        width: 80%;
+    }
 }

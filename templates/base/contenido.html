@@ -1,9 +1,11 @@
 {% load static %}
+{% load pwa %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% progressive_web_app_meta %}
     <link rel="stylesheet" href="{% static "staticBase/css/style.css" %}">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
@@ -26,11 +28,11 @@
         <a href="/menu/m">Contacto</a>
         <a href="/menu/m">Servicios</a>
         {% if user.is_authenticated %}
-            <a href="/cuenta/perfil/">{{ user.username }}</a>
+            <a href="/perfil/">{{ user.username }}</a>
             <a href="{% url 'salir' %}">Cerrar sesión</a>
         {% else %}
-            <a href="/cuenta/">Ingresar</a>
-            <a href="/cuenta/registro/">Registrarse</a>
+            <a href="/">Ingresar</a>
+            <a href="/registro/">Registrarse</a>
         {% endif %}
     </nav>
 </header>

@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'social_django',
     'apps.menu',
     'apps.cuenta',
-    'apps.auto'
+    'apps.auto',
+    'pwa',
 
     
 ]
@@ -95,12 +96,13 @@ WSGI_APPLICATION = 'chileautos.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'chileautos2',
-        'USER':'root',
-        'PASSWORD':'1234',
-        'HOST':'localhost',
-        'PORT':'3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3'
+        # 'NAME': 'chileautos2',
+        # 'USER':'root',
+        # 'PASSWORD':'1234',
+        # 'HOST':'localhost',
+        # 'PORT':'3306',
     }
 }
 
@@ -163,12 +165,25 @@ MEDIA_ROOT = join(BASE_DIR, 'media')
 
 #Variables para controlar el ingreso y salida(Rutas)
 
-LOGIN_URL = 'ingreso'
+LOGIN_URL = 'iniciarSesion'
 LOGIN_REDIRECT_URL = 'perfil'
 LOGOUT_URL = 'salir'
-LOGOUT_REDIRECT_URL = 'ingreso'
+LOGOUT_REDIRECT_URL = 'iniciarSesion'
 
 #Configuración para conectarse a la api de facebook
 
-SOCIAL_AUTH_FACEBOOK_KEY = '360285051925699'
-SOCIAL_AUTH_FACEBOOK_SECRET = 'fd371da6522a7d74e24acd592a181564'
+SOCIAL_AUTH_FACEBOOK_KEY = '909782106093110'
+SOCIAL_AUTH_FACEBOOK_SECRET = '94a04808018947791175df515c11955e'
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email','user_link']
+SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
+    'fields': 'id,name,email,picture,link'
+}
+SOCIAL_AUTH_FACEBOOK_EXTRA_DATA = [
+    ('name','name'),
+    ('email','email'),
+    ('picture','picture'),
+    ('link','user_link')
+]
+
+#Carga de archivo service worker
+PWA_SERVICE_WORKER_PATH = join(BASE_DIR,'static','pwa','sw','serviceworker.js')

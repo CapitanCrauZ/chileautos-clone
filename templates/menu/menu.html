@@ -2,6 +2,8 @@
 
 {% load static %}
 
+
+
 {% block css %}
 <!--Enlace para el Css de Menú-->
 <link rel="stylesheet" href="{% static "staticMenu/css/style.css" %}">
@@ -10,5 +12,35 @@
 {% block js %}
 <!--Enlace para el Js de Menú-->
 <script src="{% static "staticMenu/js/jsMain.js" %}"></script>
+<script src="{%static 'staticClima/js/clima.js'%}"></script>
 {% endblock js %}
+
+{% block contenido %}
+<section class="titulo">
+    <h1>Averigua el Clima de tu Ciudad!</h1>
+</section>
+
+<section class="sectionClima">
+    <div class="divClima">
+
+        <div class="divInput">
+            <input type="text" placeholder="Nombre de la ciudad" class="input_text" id="inputClima">
+            <input type="submit" value="Buscar" class="submit" id="buscarClima">
+        </div>
+
+        <div class="container">
+            <div class="tiempo">
+                <h1 class="name" id="name"></h1>
+                <p class="temp"></p>
+                <p class="clouds"></p>
+                <p class="desc"></p>
+                <p class="humidity"></p>
+                <p class=idicon></p>
+            </div>
+        </div>
+    </div>
+
+</section>
+{% endblock contenido %}
+
 

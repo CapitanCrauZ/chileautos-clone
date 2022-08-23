@@ -22,7 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('menu/', include('apps.menu.urls'), name='menu'),
     path('auto/', include('apps.auto.urls'), name='auto'),
-    path('cuenta/',include('apps.cuenta.urls'), name='cuenta'),
+    path('',include('apps.cuenta.urls'), name='cuenta'),
+    path('',include('pwa.urls'))
 
 ]
 if settings.DEBUG:

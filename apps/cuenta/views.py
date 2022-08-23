@@ -24,7 +24,7 @@ def registro(request):
             perfil.usuario = usuario
             perfil.save()
             messages.add_message(request, messages.INFO, 'Registrado Correctamente....')
-            return redirect('/cuenta/perfil/')
+            return redirect('/perfil/')
     context = {
         'formulario':formulario,
         'formulario2': formulario2
@@ -48,7 +48,7 @@ def iniciarSesion(request):
             if usuarioLogueado is not None:
                 #messages.add_message(request, messages.SUCCESS, 'Bienvenido {}'.format(usuarioLogueado.get_username()))
                 login(request, usuarioLogueado)
-                return redirect('perfil/')
+                return redirect('/perfil/')
 
     context = {
         'formulario':formulario
@@ -61,14 +61,13 @@ def iniciarSesion(request):
     #POST
 def salir(request):
     logout(request)
-    return redirect('/cuenta/')
+    return redirect('/')
 
-@login_required
 def perfil(request):
     if request.user.is_authenticated:
         return render(
             request,
             'usuario/perfil.html',
         )
-    return redirect('/cuenta/perfil')
+    return redirect('/perfil')
 
