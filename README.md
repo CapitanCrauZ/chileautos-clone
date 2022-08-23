@@ -1,5 +1,7 @@
 # Chileautos Clon - Web Application
 
+<img src="https://github.com/CapitanCrauZ/CHILEAUTOS-CLON/blob/master/media/front/cover.png" width="100%" height="100%">
+
 ### Indice
 
 - [Introducción](#Introducción).
