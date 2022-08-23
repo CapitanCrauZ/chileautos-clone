@@ -1,13 +1,13 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
-    '/cuenta/',
-    '/cuenta/perfil/',
+    '/',
+    '/perfil/',
+    '/registro/',
     '/static/staticLogin/css/style.css',
     '/static/staticBase/css/style.css',
     '/static/staticTienda/css/style.css',
     '/static/staticPerfil/css/style.css',
     '/auto/tienda/',
-    '/cuenta/registro/',
     '/auto/',
     '/manifest.json',
     'https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css'
